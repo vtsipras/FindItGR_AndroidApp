@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.finditgr">
+
+    <!-- Η εφαρμογή με βασικές ρυθμίσεις -->
+    <application
+        android:allowBackup="true"
+    android:icon="@drawable/finditlogo2"
+    android:label="FindItGR"
+    android:roundIcon="@drawable/finditlogo2"
+    android:supportsRtl="true"
+    android:theme="@style/Theme.FindItGR">
+
+    <!-- Splash screen ως launcher activity -->
+    <activity
+        android:name=".SplashActivity"
+        android:exported="true"
+        android:theme="@style/Theme.FindItGR.Splash">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" /> <!-- Κύρια ενέργεια -->
+            <category android:name="android.intent.category.LAUNCHER" /> <!-- Εμφανίζεται στο launcher -->
+        </intent-filter>
+    </activity>
+
+    <!-- Activity για τις Συχνές Ερωτήσεις / FAQ -->
+    <activity android:name=".FAQActivity" android:exported="true" />
+
+    <!-- Activity για επιλογή κατηγορίας (Χάθηκε / Βρέθηκε) -->
+    <activity
+        android:name=".SelectCategoryActivity"
+        android:exported="true" />
+
+    <!-- Κύρια οθόνη που δείχνει τις αγγελίες -->
+    <activity
+        android:name=".MainActivity"
+        android:exported="true" />
+
+    <!-- Activity για προσθήκη νέας αγγελίας -->
+    <activity
+        android:name=".AddItemActivity"
+        android:exported="true" />
+
+    <!-- Activity που δείχνει λεπτομέρειες αντικειμένου -->
+    <activity
+        android:name=".DetailActivity"
+        android:exported="true" />
+
+</application>
+
+    </manifest>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Κύριο ScrollView για κύλιση όταν η φόρμα μεγαλώνει -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Κύριο container με κατακόρυφη στοίχιση -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Πεδία εισαγωγής δεδομένων της αγγελίας -->
+
+        <!-- Τίτλος της αγγελίας -->
+        <EditText
+            android:id="@+id/editTextTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Τίτλος" />
+
+        <!-- Περιγραφή με πολλαπλές γραμμές, ξεκινά από πάνω -->
+        <EditText
+            android:id="@+id/editTextDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Περιγραφή"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:gravity="top"/>
+
+        <!-- Περιοχή όπου χάθηκε ή βρέθηκε το αντικείμενο -->
+        <EditText
+            android:id="@+id/editTextLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Περιοχή" />
+
+        <!-- Ημερομηνία σχετική με την αγγελία, μορφή dd-MM-yyyy -->
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ημερομηνία (π.χ. 31-05-2025)"
+            android:inputType="date" />
+
+        <!-- Ονοματεπώνυμο του ατόμου που καταχωρεί την αγγελία -->
+        <EditText
+            android:id="@+id/editTextFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ονοματεπώνυμο" />
+
+        <!-- Τηλέφωνο επικοινωνίας -->
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Τηλέφωνο"
+            android:inputType="phone" />
+
+        <!-- Κουμπί για αποθήκευση της αγγελίας -->
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#2997E0"
+            android:text="Αποθηκευση" />
+
+    </LinearLayout>
+</ScrollView>
