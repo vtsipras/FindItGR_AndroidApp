@@ -11,7 +11,6 @@
   - Title & description
   - Date and location
   - Contact info (phone/email)
-  - Item photo
 - 🗂️ **Filter by Category** (Lost or Found)
 - 📦 **Local Storage** using Room Database (no internet required)
 - 🎨 **Modern UI** with:
